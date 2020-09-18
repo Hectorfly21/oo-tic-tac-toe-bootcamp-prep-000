@@ -35,5 +35,6 @@ def valid_move?(index)
   return true
 else
   nil
+    end
   end
 end

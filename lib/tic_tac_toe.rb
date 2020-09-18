@@ -33,4 +33,23 @@ def position_taken?(index)
 def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
   end
+def turn
+  puts "Please enter 1-9:"
+  user_input = gets.chomp
+  index = input_to_index(user_input)
+  if valid_move?(index)
+    player_token = current_player
+    move(index, player_token)
+    display_board
+  else 
+    turn
+  end
+def turn_count
+  turn = 0
+  @board.each |index|
+  if turn[index] == "X" || turn[index] = "O"
+    turn += 1
+  end
+end
+return turn
 end

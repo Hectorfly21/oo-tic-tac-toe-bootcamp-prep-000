@@ -52,5 +52,5 @@ def turn_count
     turn += 1
   end
 end
-return turn
+  return turn
 end

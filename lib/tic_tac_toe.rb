@@ -41,7 +41,7 @@ def turn
     player_token = current_player
     move(index, player_token)
     display_board
-  else 
+  else
     turn
   end
 def turn_count

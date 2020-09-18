@@ -51,6 +51,6 @@ def turn_count
   if turn[index] == "X" || turn[index] = "O"
     turn += 1
   end
-end
-  return turn
+  return true
+  end
 end

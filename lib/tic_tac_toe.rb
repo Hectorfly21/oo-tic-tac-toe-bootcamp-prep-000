@@ -44,6 +44,7 @@ def turn
   else
     turn
   end
+end
 def turn_count
   turn = 0
   @board.each |index|
